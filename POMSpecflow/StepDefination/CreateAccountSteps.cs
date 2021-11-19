@@ -17,13 +17,17 @@ namespace POMSpecflow.StepDefination
         {
             CRPage.NavigateToPage();
         }
-        
-        [Given(@"client enter the Email")]
-        public void GivenClientEnterTheEmail()
+
+        [Given(@"client enter the email ""(.*)""")]
+        public void GivenClientEnterTheEmail(string email)
         {
-            CRPage.Email();
+            CRPage.Email(email);
         }
+
+
         
+
+               
         [When(@"client click the Create an account button")]
         public void WhenClientClickTheCreateAnAccountButton()
         {

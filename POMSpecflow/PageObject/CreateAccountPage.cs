@@ -31,9 +31,9 @@ namespace POMSpecflow.PageObject
         {
             driver.Navigate().GoToUrl("http://automationpractice.com/index.php?controller=authentication&back=my-account");
         }
-        public void Email()
+        public void Email(string email)
         {
-            EnterEmail.SendKeys("teat@abc.com");
+            EnterEmail.SendKeys(email);
 
         }
         public void Createbtn()
